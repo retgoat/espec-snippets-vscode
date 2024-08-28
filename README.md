@@ -1,5 +1,7 @@
 # ESpec Snippets for Visual Studio Code
 
+![screenshot](espec.png)
+
 This extension for Visual Studio Code adds [ESpec](http://rspec.info/) snippets for Elixir.
 
 ## Features
