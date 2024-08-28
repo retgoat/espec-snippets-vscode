@@ -3,10 +3,10 @@
   "displayName": "ESpec Snippets for VS Code",
   "description": "ESpec Snippets generator for Visual Studio Code",
   "version": "1.0.0",
-  "icon": "rspec.png",
+  "icon": "espec.png",
   "publisher": "retgoat",
   "engines": {
-    "vscode": "^1.92.0"
+    "vscode": "^1.40.0"
   },
   "repository": {
     "type": "git",
