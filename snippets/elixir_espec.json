@@ -1,0 +1,452 @@
+{
+  "espec_exphmaxby": {
+    "prefix": "exphmaxby",
+    "body": "expect(${1:Module}).to have_max_by(${2:func}, ${3:value})$0",
+    "description": "expect(Module).to have_max_by(func, value)"
+  },
+  "espec_expbc": {
+    "prefix": "expbc",
+    "body": "expect(${1:smth}).to be_close_to(${2:result}, ${3:tolerance})$0",
+    "description": "expect(smth).to be_close_to(expected, delta)"
+  },
+  "espec_expbt": {
+    "prefix": "expbt",
+    "body": "expect ${1:func} |> to(be_true)$0",
+    "description": "expect func |> to(be_true)"
+  },
+  "espec_letb": {
+    "prefix": "letb",
+    "body": "let! :${1:var}, do: ${:expr}",
+    "description": "let! :var, do: expr "
+  },
+  "espec_exphaco": {
+    "prefix": "exphaco",
+    "body": "expect(${1:Module}).to have_count(${2:value})$0",
+    "description": "expect(Module).to have_count(value)"
+  },
+  "espec_expbfy": {
+    "prefix": "expbfy",
+    "body": "expect ${1:func} |> to(be_falsy)$0",
+    "description": "expect func |> to(be_falsy)"
+  },
+  "espec_expbfunca": {
+    "prefix": "expbfunca",
+    "body": "expect ${1:func} |> to(be_function, ${2:arity})$0",
+    "description": "expect func |> to(be_function, arity)"
+  },
+  "espec_exphmax": {
+    "prefix": "exphmax",
+    "body": "expect(${1:Module}).to have_max(${2:value})$0",
+    "description": "expect(Module).to have_max(value)"
+  },
+  "espec_pen": {
+    "prefix": "pen",
+    "body": "pending \"${1:pending example}\"\"",
+    "description": "pending \"pending example\""
+  },
+  "espec_expeq": {
+    "prefix": "expeq",
+    "body": "expect(${1:smth}).to eq(${2:value})$0",
+    "description": "expect(smth).to eq(value)"
+  },
+  "espec_exphacon": {
+    "prefix": "exphacon",
+    "body": "expect ${1:Module} |> to(have_count ${2:value})$0",
+    "description": "expect Module |> to(have_count value)"
+  },
+  "espec_subjol": {
+    "prefix": "subjol",
+    "body": "subject (:${1:var})",
+    "description": "subject(var)"
+  },
+  "espec_expn": {
+    "prefix": "expn",
+    "body": "expect ${1:expression} |> to ${2:matcher}",
+    "description": "expect expression |> to something"
+  },
+  "espec_xexa": {
+    "prefix": "xexa",
+    "body": "xexample \"${1:skip}\", do: \"${2:skipped}\"",
+    "description": "xexample \"skip\", do: \"skipped\""
+  },
+  "espec_expend": {
+    "prefix": "expend",
+    "body": "expect(${1:smth}).to end_with(${2:value})$0",
+    "description": "expect(smth).to end_with(value)"
+  },
+  "espec_expbvsn": {
+    "prefix": "expbvsn",
+    "body": "expect ${1:String} |> to(be_valid_string)$0",
+    "description": "expect String |> to(be_valid_string)"
+  },
+  "espec_expraise": {
+    "prefix": "expraise",
+    "body": "expect( fn -> ${1:Module} end) |> to(raise_exception${2:Error}, ${3:message})$0",
+    "description": "expect(fn -> Module.func end) |> to(raise_exception Error, message)"
+  },
+  "espec_allacc": {
+    "prefix": "allacc",
+    "body": "allow(${1:Module}).to accept(:${2:func}, fn(${3:args}) -> ${4:result} end)$0",
+    "description": "allow(Module).to accept(func, fn(args) -> result end)"
+  },
+  "espec_exphmaxbyn": {
+    "prefix": "exphmaxbyn",
+    "body": "expect ${1:Module} |> to(have_max_by ${2:func}, ${3:value})$0",
+    "description": "expect Module |> to(have_max_by func, value)"
+  },
+  "espec_expbtpl": {
+    "prefix": "expbtpl",
+    "body": "expect ${1:smth} |> to(be_tuple)$0",
+    "description": "expect smth |> to(be_tuple)"
+  },
+  "espec_exphcntbyn": {
+    "prefix": "exphcntbyn",
+    "body": "expect ${1:Module} |> to(have_count_by ${2:func}, ${3:value})$0",
+    "description": "expect Module |> to(have_count_by func, value)"
+  },
+  "espec_exphavan": {
+    "prefix": "exphavan",
+    "body": "expect ${1:Module} |> to(have_all fn(${2:x}) -> end)$0",
+    "description": "expect Module |> to(have_all fn(x) -> x end)"
+  },
+  "espec_expbprn": {
+    "prefix": "expbprn",
+    "body": "expect(${1:String}).to be_printable$0",
+    "description": "expect(String).to be_printable"
+  },
+  "espec_exg": {
+    "prefix": "exg",
+    "body": "example_group \"${1:description}\" do\n  $0\nend",
+    "description": "example_group \"description\" do … end"
+  },
+  "espec_expbprnn": {
+    "prefix": "expbprnn",
+    "body": "expect ${1:String} |> to(be_printable)$0",
+    "description": "expect String |> to(be_printable)"
+  },
+  "espec_expbf": {
+    "prefix": "expbf",
+    "body": "expect ${1:func} |> to(be_false)$0",
+    "description": "expect func |> to(be_false)"
+  },
+  "espec_itn": {
+    "prefix": "itn",
+    "body": "it do: ${1:matcher}$0",
+    "description": "it do: matcher "
+  },
+  "espec_expeql": {
+    "prefix": "expeql",
+    "body": "expect(${1:func}).to eql(${2:value})$0",
+    "description": "expect(func).to eql(value)"
+  },
+  "espec_exphaven": {
+    "prefix": "exphaven",
+    "body": "expect ${1:smth} |> to(have ${2:value})$0",
+    "description": "expect smth |> to(have value)"
+  },
+  "espec_expbcn": {
+    "prefix": "expbcn",
+    "body": "expect ${1:func} |> to(be_close_to ${2:result}, ${3:tolerance})$0",
+    "description": "expect func |> to(be_close_to(expected, delta)"
+  },
+  "espec_subjn": {
+    "prefix": "subjn",
+    "body": "subject :${1:var}, do: ${:expr}",
+    "description": "subject :var, do: expr "
+  },
+  "espec_specify": {
+    "prefix": "specify",
+    "body": "specify \"${1:description}\", [${2:opts}], do: ${3:smth}",
+    "description": "specify \"description\", [opts], do: smth"
+  },
+  "espec_xitb": {
+    "prefix": "xitb",
+    "body": "xit \"${1:description}\" do\n\t$0\nend",
+    "description": "xit \"description\" do … end"
+  },
+  "espec_exa": {
+    "prefix": "exa",
+    "body": "example do: expect ${1:exp} |> to ${2:matcher}",
+    "description": "example do: exp |> to matcher"
+  },
+  "espec_exphat": {
+    "prefix": "exphat",
+    "body": "expect(${1:Module}).to have_at(${2:position}, ${3:value})$0",
+    "description": "expect(Module).to have_at(position, value)"
+  },
+  "espec_allaccn": {
+    "prefix": "allaccn",
+    "body": "allow ${1:module} |> to(accept(:${2:func}, fn(${3:args}) -> ${4:result} end)$0",
+    "description": "allow Module |> to(accept(func, fn(args) -> result end)"
+  },
+  "espec_expeqn": {
+    "prefix": "expeqn",
+    "body": "expect ${1:func} |> to(eq ${2:value})$0",
+    "description": "expect func |> to(eq value)"
+  },
+  "espec_expha": {
+    "prefix": "expha",
+    "body": "expect(${1:Module}).to have_any(${2:func})}$0",
+    "description": "expect(Module).to have_any(func)"
+  },
+  "espec_exphmin": {
+    "prefix": "exphmin",
+    "body": "expect(${1:Module}).to have_min(${2:value})$0",
+    "description": "expect(Module).to have_min(value)"
+  },
+  "espec_exphminn": {
+    "prefix": "exphminn",
+    "body": "expect ${1:Module} |> to(have_min ${2:value})$0",
+    "description": "expect Module |> to(have_min value)"
+  },
+  "espec_expeqln": {
+    "prefix": "expeqln",
+    "body": "expect ${1:func} |> to (eql ${2:value})$0",
+    "description": "expect func |> to(eql value)"
+  },
+  "espec_expbth": {
+    "prefix": "expbth",
+    "body": "expect ${1:func} |> to(be_truthy)$0",
+    "description": "expect func |> to(be_truthy)"
+  },
+  "espec_foc": {
+    "prefix": "foc",
+    "body": "focus \"${1:Focused}\", do: \"${2:Focused example}\"",
+    "description": "focus \"Focused\", do: \"Focused example\""
+  },
+  "espec_exphalast": {
+    "prefix": "exphalast",
+    "body": "expect(${1:Module}).to have_last(${2:value})$0",
+    "description": "expect(Module).to have_last(value)"
+  },
+  "espec_expbits": {
+    "prefix": "expbits",
+    "body": "expect ${1:smth} |> to(be_bitstring)$0",
+    "description": "expect smth |> to(be_bitstring)"
+  },
+  "espec_exphal": {
+    "prefix": "exphal",
+    "body": "expect(${1:Module}).to have_length(${2:value})$0",
+    "description": "expect(Module).to have_length(value)"
+  },
+  "espec_it": {
+    "prefix": "it",
+    "body": "it \"${1:does something}\" do\n\t$0\nend",
+    "description": "it \"does something\" do … end"
+  },
+  "espec_expbbn": {
+    "prefix": "expbbn",
+    "body": "expect ${1:subject} |> to(be_between ${2:result}, ${3:tolerance})$0",
+    "description": "expect func |> to(be_between(expected, delta)"
+  },
+  "espec_exphan": {
+    "prefix": "exphan",
+    "body": "expect ${1:Module} |> to(have_any ${2:func})}$0",
+    "description": "expect Module |> to(have_any func)"
+  },
+  "espec_expbstrus": {
+    "prefix": "expbstrus",
+    "body": "expect ${1:smth} |> to(be_struct, ${2:StructExample})$0",
+    "description": "expect smth |> to(be_struct, StructExample)"
+  },
+  "espec_expmatchn": {
+    "prefix": "expmatchn",
+    "body": "expect ${1:func} |> to (match \"{2:regexp}\")$0",
+    "description": "expect func |> to(match, string)"
+  },
+  "espec_con": {
+    "prefix": "con",
+    "body": "context \"${1:description}\" do\n\t$0\nend",
+    "description": "context \"description\" do … end"
+  },
+  "espec_expbe": {
+    "prefix": "expbe",
+    "body": "expect(${1:smth}).to be(${2:operator}, ${2:value})$0",
+    "description": "expect(smth).to be(operator, value)"
+  },
+  "espec_expbstru": {
+    "prefix": "expbstru",
+    "body": "expect ${1:smth} |> to(be_struct)$0",
+    "description": "expect smth |> to(be_struct)"
+  },
+  "espec_exphatn": {
+    "prefix": "exphatn",
+    "body": "expect ${1:Module} |> to(have_at ${2:position}, ${3:value})$0",
+    "description": "expect Module |> to(have_at position, value)"
+  },
+  "espec_exphminbyn": {
+    "prefix": "exphminbyn",
+    "body": "expect ${1:Module} |> to(have_min_by ${2:func}, ${3:value})$0",
+    "description": "expect Module |> to(have_min_by func, value)"
+  },
+  "espec_expbvs": {
+    "prefix": "expbvs",
+    "body": "expect(${1:String}).to be_valid_string$0",
+    "description": "expect(String).to be_valid_string"
+  },
+  "espec_xitn": {
+    "prefix": "xitn",
+    "body": "xit \"${1:description}\" do: \"${2:skipped}\"",
+    "description": "xit \"description\" do: \"skipped\""
+  },
+  "espec_expendn": {
+    "prefix": "expendn",
+    "body": "expect ${1:smth} |> to(end_with ${2:value})$0",
+    "description": "expect smth |> to(end_with value)"
+  },
+  "espec_exphave": {
+    "prefix": "exphave",
+    "body": "expect(${1:Module}).to have(${2:value})$0",
+    "description": "expect(Module).to have(value)"
+  },
+  "espec_expstn": {
+    "prefix": "expstn",
+    "body": "expect ${1:Module} |> to(start_with ${2:value})$0",
+    "description": "expect Module |> to(start_with value)"
+  },
+  "espec_exphminby": {
+    "prefix": "exphminby",
+    "body": "expect(${1:Module}).to have_min_by(${2:func}, ${3:value})$0",
+    "description": "expect(Module).to have_min_by(func, value)"
+  },
+  "espec_exp": {
+    "prefix": "exp",
+    "body": "expect(${1:smth}).to ${2:matcher}$0",
+    "description": "expect(smth).to something"
+  },
+  "espec_expchng": {
+    "prefix": "expchng",
+    "body": "expect ${1:func1} |> to(change ${2:func2}, ${3:value})$0",
+    "description": "expect func1 |> to(change func2, value)"
+  },
+  "espec_expbb": {
+    "prefix": "expbb",
+    "body": "expect(${1:subject}).to be_between(${2:result}, ${3:tolerance})$0",
+    "description": "expect(obj).to be_between(expected, delta)"
+  },
+  "espec_exphst": {
+    "prefix": "exphst",
+    "body": "expect(${1:Module}).to start_with(${2:value})$0",
+    "description": "expect(Module).to start_with(value)"
+  },
+  "espec_expmatch": {
+    "prefix": "expmatch",
+    "body": "expect(${1:func}).to match(~r/${2:regexp}/)$0",
+    "description": "expect(func).to match(~r/regexp/)"
+  },
+  "espec_exphsn": {
+    "prefix": "exphsn",
+    "body": "expect ${1:Module} |> to(have_size ${2:value})$0",
+    "description": "expect Module |> to(have_size value)"
+  },
+  "espec_exphcntby": {
+    "prefix": "exphcntby",
+    "body": "expect(${1:Module}).to have_count_by(${2:func}, ${3:value})$0",
+    "description": "expect(Module).to have_count_by(func, value)"
+  },
+  "espec_expben": {
+    "prefix": "expben",
+    "body": "expect ${1:func} |> to(be ${2:operator}, ${2:value})$0",
+    "description": "expect func |> to(be operator, value)"
+  },
+  "espec_let": {
+    "prefix": "let",
+    "body": "let :${1:var}, do: ${:expr}",
+    "description": "let :var, do: expr "
+  },
+  "espec_expbatm": {
+    "prefix": "expbatm",
+    "body": "expect ${1:smth} |> to(be_atom)$0",
+    "description": "expect smth |> to(be_atom)"
+  },
+  "espec_expchngft": {
+    "prefix": "expchngft",
+    "body": "expect ${1:func1} |> to(change ${2:func2}, ${3:value_from}, ${3:value_to})$0",
+    "description": "expect func1 |> to(change func2, value_from, value_to)"
+  },
+  "espec_exphalastn": {
+    "prefix": "exphalastn",
+    "body": "expect ${1:Module} |> to(have_last ${2:value})$0",
+    "description": "expect Module |> to(have_last value)"
+  },
+  "espec_expbfunc": {
+    "prefix": "expbfunc",
+    "body": "expect ${1:func} |> to(be_function)$0",
+    "description": "expect func |> to(be_function)"
+  },
+  "espec_exphmaxn": {
+    "prefix": "exphmaxn",
+    "body": "expect ${1:Module} |> to(have_max ${2:value})$0",
+    "description": "expect Module |> to(have_max value)"
+  },
+  "espec_exphas": {
+    "prefix": "exphas",
+    "body": "expect(${1:Module}).to have_size(${2:value})$0",
+    "description": "expect(Module).to have_size(value)"
+  },
+  "espec_expbli": {
+    "prefix": "expbli",
+    "body": "expect ${1:smth} |> to(be_list)$0",
+    "description": "expect smth |> to(be_list)"
+  },
+  "espec_des": {
+    "prefix": "des",
+    "body": "describe \"${1:description}\" do\n  $0\nend",
+    "description": "describe \"description\" do … end"
+  },
+  "espec_itbl": {
+    "prefix": "itbl",
+    "body": "it_behaves_like($1)$0",
+    "description": "it_behaves_like(SharedExample)"
+  },
+  "espec_tth": {
+    "prefix": "tth",
+    "body": "to(${:throw_term} ${2:term})",
+    "description": "to(throw_term term)"
+  },
+  "espec_bef": {
+    "prefix": "bef",
+    "body": "before do: $0",
+    "description": "before do ..."
+  },
+  "espec_incse": {
+    "prefix": "incse",
+    "body": "include_examples(${1:SharedExample})",
+    "description": "include shared examples"
+  },
+  "espec_usesp": {
+    "prefix": "usesp",
+    "body": "use ESpec",
+    "description": "use ESpec"
+  },
+  "espec_usesphr": {
+    "prefix": "usesphr",
+    "body": "use ESpec.Phoenix, request: Pspgwe.Endpoint",
+    "description": "use ESpec.Phoenix.Endpoint"
+  },
+  "espec_tre": {
+    "prefix": "tre",
+    "body": "to_raise(${1:exception})",
+    "description": "to_raise(exception)"
+  },
+  "espec_consy": {
+    "prefix": "consy",
+    "body": "context \"${1:description}\", sync: ${2:sync_mode} do\n  ${3:matcher}\nend$0",
+    "description": "to_raise(exception)"
+  },
+  "espec_cusmat": {
+    "prefix": "cusmat",
+    "body": "defmodule ${1:MyCustomMatcher}\ndefp match(${3:subject}, ${4:number}) do\n  result = rem(${4:number}, ${3:subject})\n  {result == 0, result}\nend\n\ndefp success_message(${3:subject}, ${4:number}, ${5:_result}, ${6:positive}) do\n  to = if ${6:positive}, do: \"is\", else: \"is not\"\n  \"`#{inspect ${3:subject}}` #{to} the divisor of #{${4:number}}.\"\nend\n\ndefp error_message(${3:subject}, ${4:number}, ${5:result}, ${6:positive}) do\n  to = if ${6:positive}, do: \"to\", else: \"not to\"\n  \"Expected `#{inspect ${3:subject}}` #{to} be the divisor of `#{${4:number}}`, but the remainder is '#{${5:result}}'.\"\nend\nend",
+    "description": "Custom matcher"
+  },
+  "espec_fnlb": {
+    "prefix": "fnlb",
+    "body": "finally do\n  ${1:block}\nend",
+    "description": "finally block"
+  },
+  "espec_fnl": {
+    "prefix": "fnl",
+    "body": "finally do: ${1:block}",
+    "description": "finally one liner"
+  }
+}

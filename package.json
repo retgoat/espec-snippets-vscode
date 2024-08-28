@@ -1,0 +1,30 @@
+{
+  "name": "espec-snippets-vscode",
+  "displayName": "ESpec Snippets for VS Code",
+  "description": "ESpec Snippets generator for Visual Studio Code",
+  "version": "1.0.0",
+  "icon": "rspec.png",
+  "publisher": "retgoat",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/retgoat/espec-snippets-vscode.git"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "elixir",
+        "path": "./snippets/elixir_espec.json"
+      }
+    ]
+  },
+  "keywords": [
+    "Elixir",
+    "ESpec"
+  ]
+}
